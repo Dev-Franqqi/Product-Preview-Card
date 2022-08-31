@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fraunces">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+<style>
+  body{
+    background-color:  hsl(30, 38%, 92%);
+    font-family:Fraunces;
+    display:flex;
+    justify-content:center;
+    padding-top:10%;
+
+ 
+  }
+.container{
+  
+  
+  background-color:hsl(0, 0%, 100%);
+  max-width: max-content;
+  padding:10px 60px 20px 10px;
+  max-height: fit-content;
+  float:left;
+  border-radius:0px 10px 10px 0px;
+
+}
+#btn{
+  padding:10px 39px;
+  background-color:hsl(158, 36%, 37%);
+
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+p{
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  line-height:1.5rem;
+}
+.h{
+  letter-spacing: 4px;
+
+  font-family: Montserrat;
+  font-weight:500px;
+}
+.price{
+  margin-bottom:25px;
+  font-weight: 700;
+
+}
+h1{
+  font-weight:700px;
+}
+
+#bigprice{
+  font-size: x-large;
+  color:darkcyan;
+}
+#smallprice{
+  font-size:small;
+  text-decoration: line-through;
+  color:hsl(228, 12%, 48%);
+  text-decoration-color:hsl(228, 12%, 48%);
+}
+.desk{
+  float:left;
+  border-radius:10px 0px 0px 10px;
+}
+.mobi{
+  display:none;
+}
+main{
+  height:fit-content;
+  width:fit-content;
+  
+}
+@media only screen and (max-width: 375px) {
+  .desk{
+    display:none;
+  }
+  .mobi{
+    display:block;
+    border-radius:10px 10px 0px 0px ;
+  }
+
+  .container{
+    border-radius:0px 0px 10px 10px;
+  }
+  
+}
+
+
+</style>
+
+</head>
+<body>
+<main>
+  <img class='mobi' src="images\image-product-mobile.jpg" alt="perfume picture" width="269">
+
+  <img class='desk' src="images\image-product-desktop.jpg" width="270" height="412.5" alt="perfume image">
+  <div class="container">
+    <p class="h">PREVIEW</p>
+
+    <h1>Gabrielle <br>Essence Eau <br> De Parfum</h1>
+    <p>A floral, solar and voluptuous <br>interpretation composed by <br>
+    Oliver Polge,Perfumer-creator <br>
+  for the House of CHANEL</p>
+
+  <div class="price">
+    <span id="bigprice">$149.99</span>
+    <span id="smallprice">$169.99</span>
+  </div>
+    <span id="btn">Add to Cart</span>
+
+  </div>
+
+
+
+</main>
+
+
+ 
+  
+</body>
+</html>
